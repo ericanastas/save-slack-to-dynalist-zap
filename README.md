@@ -4,6 +4,9 @@
 Zapier code step to forward messages saved in slack to [dynalist.io](https://www.dynalist.io)
 
 
+![Screen Shot](screen-shot.png)
+
+
 ## Setup
 
 1. Create a new Zapier Zap
