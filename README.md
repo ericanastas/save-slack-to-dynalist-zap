@@ -37,7 +37,11 @@ The following input data fields must be added to the code step.
 The following data fields must be added to the code step to pass data from the the saved slack message into the script.
 
 `permaLink`: The permalink to the slack message
+
 `text`: The message text
+
 `channelName`: The channel name
+
 `userName`: The message sender
+
 `timeStamp`: The timestamp the message was sent
