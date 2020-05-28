@@ -9,7 +9,7 @@ Zapier code step to forward messages saved in slack to [dynalist.io](https://www
 1. Create a new Zapier Zap
 2. Choose the Slack app and the "New Saved Message" trigger event
 3. Follow the prompts to authenticate Zapier with the apropriate Slack acccount.
-4. Add a **Code by Zapier** app and the "Run Javascript" action event.
+4. Add a "Code by Zapier" app and the "Run Javascript" action event.
 5. Configure the "Input Data" fields described below.
 6. Copy the code in `code.js` into the "Code" input.
 
@@ -18,11 +18,13 @@ Zapier code step to forward messages saved in slack to [dynalist.io](https://www
 
 The following input data fields must be added to the code step.
 
-### Setup
+### Dynalist Input Data
 
 `token`: Your dynalist API token
 
-`file_id`: The id of the document to send slack messsages to. This can be determined from the URL. `https://dynalist.io/d/{file_id}`
+`file_id`: The id of the document to send slack messsages to. This can be determined from the URL. 
+
+`https://dynalist.io/d/{file_id}`
                                      
 `parent_id`: The specific node of the document specified above to save slack messages to. This can also be determined from the URL.
 
@@ -30,7 +32,7 @@ The following input data fields must be added to the code step.
 
  Alternatively this can be set to `root` to send messages to the root of the document.
                                                  
-### Slack Fields
+### Slack Input Data
 
 The following data fields must be added to the code step to pass data from the the saved slack message into the script.
 
